@@ -13,7 +13,7 @@
 					                <input id="client" class="form-control typeahead" type="text" placeholder="Cliente" />
 					            </div>
 					            <div class="col-xs-2">
-					                <input class="form-control" type="text" placeholder="Dni" readonly v-model="fillClient.dni" />
+					                <input class="form-control" type="text" placeholder="RNC" readonly v-model="fillClient.dni" />
 					            </div>
 					            <div class="col-xs-4">
 					                <input class="form-control" type="text" placeholder="Dirección" readonly v-model="fillClient.address" />
@@ -30,7 +30,7 @@
 					        </div>
 					        <div class="col-xs-2">
 					            <div class="input-group">
-					                <span class="input-group-addon" id="basic-addon">Bs.S</span>
+					                <span class="input-group-addon" id="basic-addon">RD$</span>
 					                <input class="form-control" type="text" placeholder="Precio" v-model="fillProduct.price" readonly />
 					            </div>
 					        </div>
@@ -60,22 +60,22 @@
 					            </td>
 					            <td>{{ detail.name }}</td>
 					            <td class="text-center">{{ detail.quantity }}</td>
-					            <td class="text-right">Bs.S {{ detail.price }}</td>
-					            <td class="text-right">Bs.S {{ detail.total.toFixed(2) }}</td>
+					            <td class="text-right">RD$ {{ detail.price }}</td>
+					            <td class="text-right">RD$ {{ detail.total.toFixed(2) }}</td>
 					        </tr>
 					        </tbody>
 					        <tfoot>
 					        <tr>
-					            <td colspan="4" class="text-right"><b>IVA</b></td>
-					            <td class="text-right">Bs.S {{ iva.toFixed(2) }}</td>
+					            <td colspan="4" class="text-right"><b>ITBIS</b></td>
+					            <td class="text-right">RD$ {{ iva.toFixed(2) }}</td>
 					        </tr>
 					        <tr>
 					            <td colspan="4" class="text-right"><b>Sub Total</b></td>
-					            <td class="text-right">Bs.S {{ subTotal.toFixed(2) }}</td>
+					            <td class="text-right">RD$ {{ subTotal.toFixed(2) }}</td>
 					        </tr>
 					        <tr>
 					            <td colspan="4" class="text-right"><b>Total</b></td>
-					            <td class="text-right">Bs.S {{ total.toFixed(2) }}</td>
+					            <td class="text-right">RD$ {{ total.toFixed(2) }}</td>
 					        </tr>
 					        </tfoot>
 					    </table>
